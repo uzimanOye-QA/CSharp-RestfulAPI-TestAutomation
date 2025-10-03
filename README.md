@@ -33,14 +33,16 @@ The framework provides:
 ---
 
 ## 📂 Project Structure   
-📦 RestfulAPITestAutomationFramework
-├── 📂 Features # Gherkin BDD feature files
-├── 📂 StepDefinitions # Step definitions (Reqnroll/NUnit)
-├── 📂 SetUp # Context & setup classes
-├── 📂 Model # DTOs for requests & responses
-├── 📂 Reports # Generated HTML reports
-├── 📂 Screenshots # Screenshots/logs for failed tests
-└── 📜 README.md # Documentation
+```text
+📦 RestfulAPITestAutomationFramework  
+├── 📂 Features          # Gherkin BDD feature files  
+├── 📂 StepDefinitions   # Step definitions (Reqnroll/NUnit)  
+├── 📂 SetUp             # Context & setup classes  
+├── 📂 Model             # DTOs for requests & responses  
+├── 📂 Reports           # Generated HTML reports  
+├── 📂 Screenshots       # Screenshots/logs for failed tests  
+└── 📜 README.md         # Documentation  
+
 ---
 
 ## 🚀 Getting Started  
