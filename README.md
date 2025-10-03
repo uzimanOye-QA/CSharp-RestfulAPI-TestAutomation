@@ -48,19 +48,17 @@ A **fully automated API testing framework** for the ***[Restful Booker API](http
 └── 📜 README.md         # Documentation  
 
 ---
+## 🎯 Example Test Scenarios
 
-## **The framework provides: ** 
-✅ Easy-to-read **Gherkin feature files**  
-✅ **Reusable Context** for API calls (using RestSharp)  
-✅ **HTML Reports with ExtentReports**  
-✅ **Request/Response logging** (saved as text/images)  
-✅ **Screenshot-on-failure support** (UI/logs)
-
----
-## ✅ **Future Enhancements**
-
-🔹 JSON Schema Validation
-🔹 CI/CD Integration (GitHub Actions, Azure DevOps, Jenkins)
-🔹 Parallel Execution support
-🔹 Environment-based config (QA, Staging, Prod)
-
+Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieved(GET)
+	Given that RestfulBooker web services with resource auth is loaded for POST call
+	When I create a new booking with the following details
+		| firstname | lastname | totalprice | depositpaid | checkin    | checkout   | additionalneeds |
+		| Usman     | Oye      | 523        | false       | 2017-08-09 | 2022-06-26 | Breakfast       |
+	Then the status code must be equal to OK
+	And a new booking ID is generated
+	When I retrieve the booking I just created
+	Then the status code must be equal to OK
+	And the following records must be retrieved from Booking table
+		| firstname | lastname | totalprice | depositpaid | checkin    | checkout   | additionalneeds |
+		| Usman     | Oye      | 523        | false       | 2017-08-09 | 2022-06-26 | Breakfast       |
