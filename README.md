@@ -47,3 +47,20 @@ A **fully automated API testing framework** for the ***[Restful Booker API](http
 ├── 📂 Screenshots       # Screenshots/logs for failed tests  
 └── 📜 README.md         # Documentation  
 
+---
+
+## **The framework provides: ** 
+✅ Easy-to-read **Gherkin feature files**  
+✅ **Reusable Context** for API calls (using RestSharp)  
+✅ **HTML Reports with ExtentReports**  
+✅ **Request/Response logging** (saved as text/images)  
+✅ **Screenshot-on-failure support** (UI/logs)
+
+---
+## ✅ **Future Enhancements**
+
+🔹 JSON Schema Validation
+🔹 CI/CD Integration (GitHub Actions, Azure DevOps, Jenkins)
+🔹 Parallel Execution support
+🔹 Environment-based config (QA, Staging, Prod)
+
