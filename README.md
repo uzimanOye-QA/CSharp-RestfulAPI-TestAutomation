@@ -62,3 +62,7 @@ Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieve
 	And the following records must be retrieved from Booking table
 		| firstname | lastname | totalprice | depositpaid | checkin    | checkout   | additionalneeds |
 		| Usman     | Oye      | 523        | false       | 2017-08-09 | 2022-06-26 | Breakfast       |
+
+
+
+🛠 Technologies Used
