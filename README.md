@@ -26,24 +26,21 @@ The framework provides:
 - [C# / .NET 6](https://dotnet.microsoft.com/)  
 - [Reqnroll (SpecFlow alternative)](https://reqnroll.net/) for BDD  
 - [RestSharp](https://restsharp.dev/) for API requests  
-- [Newtonsoft.Json](https://www.newtonsoft.com/json) for JSON serialization  
+- [Newtonsoft.Json](https://www.newtonsoft.com/json) for JSON serialization/deserialization
 - [NUnit](https://nunit.org/) as test runner  
 - [ExtentReports](https://github.com/extent-framework/extentreports-csharp) for rich reports  
 
 ---
 
 ## 📂 Project Structure  
-
-📂 RestfulAPITestAutomationFramework
-┣ 📂 Features # BDD Feature files (Gherkin)
-┣ 📂 StepDefinitions # Step definitions (Reqnroll/NUnit)
-┣ 📂 SetUp # Context & Base setup classes
-┣ 📂 Model # Request/Response DTOs
-┣ 📂 Reports # HTML reports
-┣ 📂 Screenshots # Captured screenshots/logs
-┣ 📜 README.md # Project documentation
-
-
+📦 RestfulAPITestAutomationFramework
+ ┣ 📂 Features          # Gherkin BDD feature files
+ ┣ 📂 StepDefinitions   # Step definitions (Reqnroll/NUnit)
+ ┣ 📂 SetUp             # Context & setup classes
+ ┣ 📂 Model             # DTOs for requests & responses
+ ┣ 📂 Reports           # Generated HTML reports
+ ┣ 📂 Screenshots       # Screenshots/logs for failed tests
+ ┣ 📜 README.md         # Documentation
 
 ---
 
@@ -51,23 +48,23 @@ The framework provides:
 
 ### 1️⃣ Clone the repo  
 ```bash
-git clone https://github.com/your-username/RestfulAPITestAutomationFramework.git
+git clone https://github.com/your-username/CSharp-RestfulAPI-TestAutomation.git
 cd RestfulAPITestAutomationFramework
+---
+2️⃣ Install Dependencies
 
-2️⃣ Install dependencies
-
-Make sure you have:
+Make sure you have installed:
 .NET 6 SDK or higher
-NUnit Test Adapter
-RestSharp, Reqnroll, ExtentReports, Newtonsoft.Json
+NUnit Test Adapter (for Visual Studio / Rider)
+NuGet packages: RestSharp, Newtonsoft.Json, Reqnroll, ExtentReports
 
 Restore dependencies:
 dotnet restore
-
+---
 3️⃣ Run the tests
 
 dotnet test
-
+---
 🧪 Example Feature
 
 Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieved(GET)
@@ -83,7 +80,7 @@ Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieve
 		| firstname | lastname | totalprice | depositpaid | checkin    | checkout   | additionalneeds |
 		| Usman     | Oye      | 523        | false       | 2017-08-09 | 2022-06-26 | Breakfast       |
 
-
+---
 ✅ Future Enhancements
 
 🔹 JSON Schema Validation
