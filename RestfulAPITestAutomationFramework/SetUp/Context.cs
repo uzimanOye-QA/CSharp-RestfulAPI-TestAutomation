@@ -3,6 +3,8 @@ using RestfulAPITestAutomationFramework.Model;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,17 +22,18 @@ namespace RestfulAPITestAutomationFramework.SetUp
         public string statusCode = string.Empty;
         public string? AuthToken { get; set; }
 
-        public void GetMethod(string resource) {
-            var client = new RestClient(baseUrl); 
+        public void GetMethod(string resource)
+        {
+            var client = new RestClient(baseUrl);
             var request = new RestRequest(resource, Method.Get);
             request.AddHeader("Accept", "application/json");
             var result = client.Execute(request);
-            content = result.Content ?? string.Empty; 
+            content = result.Content ?? string.Empty;
             statusCode = result.StatusCode.ToString();
 
 
         }
-       
+
 
         public void PostMethod(string resource, object payload)
         {
@@ -38,14 +41,15 @@ namespace RestfulAPITestAutomationFramework.SetUp
             var request = new RestRequest(resource, Method.Post);
 
             string jsonBody = JsonConvert.SerializeObject(payload, Formatting.Indented);
-            request.AddStringBody(jsonBody, DataFormat.Json);  
+            request.AddStringBody(jsonBody, DataFormat.Json);
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Accept", "application/json");
             var result = client.Execute(request);
             statusCode = result.StatusCode.ToString();
             content = result.Content ?? string.Empty;
         }
-        public void PutMethod(string resource, object payload) {
+        public void PutMethod(string resource, object payload)
+        {
 
             var client = new RestClient(baseUrl);
             var request = new RestRequest(resource, Method.Put);
@@ -58,7 +62,7 @@ namespace RestfulAPITestAutomationFramework.SetUp
             statusCode = result.StatusCode.ToString();
             content = result.Content ?? string.Empty;
 
-          
+
 
         }
 
@@ -81,7 +85,7 @@ namespace RestfulAPITestAutomationFramework.SetUp
             statusCode = result.StatusCode.ToString();
             content = result.Content ?? string.Empty;
         }
-       
+
 
         public void DeleteMethod(string resource)
         {
@@ -108,7 +112,7 @@ namespace RestfulAPITestAutomationFramework.SetUp
             var result = client.Execute(request);
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Accept", "application/json");
-           
+
             statusCode = result.StatusCode.ToString();
             content = result.Content ?? string.Empty;
         }
@@ -129,5 +133,46 @@ namespace RestfulAPITestAutomationFramework.SetUp
             }
         }
 
+
+        public void SaveApiLog(string scenarioName)
+        {
+            string logDir = Path.Combine(Directory.GetCurrentDirectory(), "ApiLogs");
+            Directory.CreateDirectory(logDir);
+
+            string logFile = Path.Combine(logDir, $"{scenarioName}_{DateTime.Now:yyyyMMdd_HHmmss}.txt");
+
+            var log = new StringBuilder();
+            log.AppendLine($"➡️ [{DateTime.Now}] API CALL");
+            log.AppendLine($"Status Code: {statusCode}");
+            log.AppendLine("Response:");
+            log.AppendLine(content);
+
+            File.WriteAllText(logFile, log.ToString());
+        }
+
+        public void SaveApiLogAsImage(string scenarioName)
+        {
+            string logDir = Path.Combine(Directory.GetCurrentDirectory(), "Screenshots");
+            Directory.CreateDirectory(logDir);
+
+            string filePath = Path.Combine(logDir, $"{scenarioName}_{DateTime.Now:yyyyMMdd_HHmmss}.png");
+
+            string logText = $"➡️ API Request/Response Log\n" +
+                             $"StatusCode: {statusCode}\n\n" +
+                             $"Response:\n{content}";
+
+            using (Bitmap bmp = new Bitmap(1200, 800))
+            using (Graphics g = Graphics.FromImage(bmp))
+            using (Font font = new Font("Consolas", 12))
+            using (Brush brush = new SolidBrush(Color.Black))
+            {
+                g.Clear(Color.White);
+                g.DrawString(logText, font, brush, new RectangleF(10, 10, 1180, 780));
+                bmp.Save(filePath, ImageFormat.Png);
+            }
+
+
+
+        }
     }
 }

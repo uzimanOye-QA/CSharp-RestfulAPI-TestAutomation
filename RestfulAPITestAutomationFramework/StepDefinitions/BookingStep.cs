@@ -19,7 +19,7 @@ namespace RestfulAPITestAutomationFramework.StepDefinitions
     {
         [JsonProperty("bookingid")]
         public int Bookingid { get; set; }
-       // public BookingModel? booking { get; set; }
+        // public BookingModel? booking { get; set; }
     }
     [Binding]
     public class BookingStep
@@ -52,7 +52,7 @@ namespace RestfulAPITestAutomationFramework.StepDefinitions
             Assert.IsNotNull(actualResult, "Failed to deserialize the API response. Response was null or empty.");
             Assert.IsNotNull(expectedBooking, "Failed to create expected booking from DataTable. Result was null.");
 
-           
+
         }
 
 
@@ -78,10 +78,10 @@ namespace RestfulAPITestAutomationFramework.StepDefinitions
             var row = dataTable.Rows.First();
             string checkinDate = row["checkin"];
             string checkoutDate = row["checkout"];
-           
+
             booking.bookingdates = new BookingModel.BookingDates
             {
-              
+
                 checkin = checkinDate,
                 checkout = checkoutDate
             };
@@ -89,7 +89,7 @@ namespace RestfulAPITestAutomationFramework.StepDefinitions
 
 
 
-           
+
         }
 
         [Then("a new booking ID is generated")]
@@ -119,8 +119,8 @@ namespace RestfulAPITestAutomationFramework.StepDefinitions
             var deletedBookings = dataTable.CreateSet<BookingModel>();
             foreach (var booking in deletedBookings)
             {
-                
-                context.GetMethod($"booking/{booking.Id}"); 
+
+                context.GetMethod($"booking/{booking.Id}");
 
                 Assert.AreNotEqual("OK", context.statusCode,
                     $"Booking with ID {booking.Id} still exists after deletion.");
@@ -130,7 +130,7 @@ namespace RestfulAPITestAutomationFramework.StepDefinitions
 
         }
 
-        public bool ObjectComparer(object expectedObject, object actualObject )
+        public bool ObjectComparer(object expectedObject, object actualObject)
         {
 
             var objectOne = JsonConvert.SerializeObject(expectedObject);
@@ -162,7 +162,7 @@ namespace RestfulAPITestAutomationFramework.StepDefinitions
         {
             await context.CreateAuthToken();
             var updatedBooking = dataTable.CreateInstance<BookingModel>();
-           
+
             context.PatchMethod($"booking/{_newBookingId}", updatedBooking);
         }
 
