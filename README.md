@@ -1,14 +1,39 @@
-# 🧪 Restful API Test Automation Framework  
+# 🏨 RestfulBooker API Test Automation Framework
 
-A **BDD-style automation framework** built with:  
-- ✅ [NUnit](https://nunit.org/) – Test runner  
-- ✅ [Reqnroll](https://reqnroll.net/) – Gherkin-based BDD  
-- ✅ [RestSharp](https://restsharp.dev/) – API testing client  
-- ✅ [ExtentReports](https://extentreports.com/) – Reporting  
-- ✅ [Newtonsoft.Json](https://www.newtonsoft.com/json) – JSON serialization/deserialization  
+![.NET](https://img.shields.io/badge/.NET-8.0-blue)
+![NUnit](https://img.shields.io/badge/NUnit-Testing-brightgreen)
+![RestSharp](https://img.shields.io/badge/RestSharp-API-yellow)
+![Reqnroll](https://img.shields.io/badge/Reqnroll-BDD-orange)
+![ExtentReports](https://img.shields.io/badge/ExtentReports-Reporting-red)
 
-This **C# BDD automation framework** automates the **[Restful Booker API](https://restful-booker.herokuapp.com/)** API endpoints for CRUD (Create, Read, Update, Delete) operations with authentication and reporting.  
+---
 
+## 🚀 Overview
+A **fully automated API testing framework** for the ***[Restful Booker API](https://restful-booker.herokuapp.com/)**, demonstrating **end-to-end CRUD testing, authentication handling, data-driven scenarios, and rich reporting**. Designed to showcase **professional, maintainable, and scalable automation skills**.
+
+---
+
+## 💡 Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **CRUD Operations** | Create, Retrieve, Update (PUT), Partial Update (PATCH), Delete bookings |
+| **Negative Testing** | Delete without authentication and other error scenarios |
+| **Data-Driven Testing** | Gherkin scenarios mapped to strongly-typed models (`BookingModel`) |
+| **Authentication Handling** | Automatic token creation and management |
+| **Reporting** | Step-level **ExtentReports**, HTML reports, API logs, and screenshots |
+| **Validation** | Status codes, response payloads, and object-level comparison |
+
+---
+
+## 🛠 Technologies Used
+
+- **C# (.NET 8.0)**  
+- **RestSharp** – HTTP requests  
+- **Newtonsoft.Json** – JSON serialization/deserialization  
+- **NUnit** – Test execution and assertions  
+- **Reqnroll & SpecFlow** – Gherkin-based BDD automation  
+- **ExtentReports** – Professional HTML reporting   
 ---
 ## 📂 Project Structure  
 
@@ -29,32 +54,6 @@ This **C# BDD automation framework** automates the **[Restful Booker API](https:
 ✅ **HTML Reports with ExtentReports**  
 ✅ **Request/Response logging** (saved as text/images)  
 ✅ **Screenshot-on-failure support** (UI/logs)
-
----
-## ⚙️ Tech Stack  
-
-- [C# / .NET 6](https://dotnet.microsoft.com/)  
-- [Reqnroll (SpecFlow alternative)](https://reqnroll.net/) for BDD  
-- [RestSharp](https://restsharp.dev/) for API requests  
-- [Newtonsoft.Json](https://www.newtonsoft.com/json) for JSON serialization/deserialization
-- [NUnit](https://nunit.org/) as test runner  
-- [ExtentReports](https://github.com/extent-framework/extentreports-csharp) for rich reports  
----
-
-## 🚀 Getting Started  
-✅ Prerequisites
-
-Make sure you have installed:
-.NET 6.0 SDK
- or later
-Visual Studio 2022
- or Rider/VS Code
-NuGet packages:
-NUnit
-Reqnroll
-RestSharp
-Newtonsoft.Json
-AventStack.ExtentReports
 
 ---
 ✅ Future Enhancements
