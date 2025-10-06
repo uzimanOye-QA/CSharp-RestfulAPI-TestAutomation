@@ -73,21 +73,19 @@ Below are sample screenshots from the **ExtentReports HTML Report** generated af
 ### 🧩 Dashboard Overview
 Displays overall feature, scenario, and step-level execution summary.
 
-<img width="1860" height="967" alt="image" src="https://github.com/user-attachments/assets/0e20eecb-8f0c-4291-9e35-302a4a86d753" />
-
+https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/APi%20Result_Dashboard%20Overview.png
 ---
 
 ### ✅ Detailed Scenario Report
 Shows individual API test scenarios (POST, GET, PUT, PATCH, DELETE) and their pass/fail status.
 
-<img width="1855" height="942" alt="Image" src="https://github.com/user-attachments/assets/75c8f0e7-1461-434d-810c-97e8e5c0d401" />
+https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/Detailed%20APi%20Scenario%20Report.png
 ---
 
 ### 🧾 API Request & Response Logs
 Each test saves its request and response details automatically for traceability.
 
-<img width="1431" height="547" alt="image" src="https://github.com/user-attachments/assets/24691b19-b8e1-456e-932c-58c97aaf2fa9" />
-
+https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/API%20result_logs%20file.png
 ---
 
 
