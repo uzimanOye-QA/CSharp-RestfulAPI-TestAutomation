@@ -36,18 +36,21 @@ A **fully automated API testing framework** for the ***[Restful Booker API](http
 - - **Visual Studio 2022** - IDEs used
 
 ---
+## 🎯 Example Test Scenarios
 
-## 📂 Project Structure  
-```text
-📦 RestfulAPITestAutomationFramework  
-├── 📂 Features          # Gherkin BDD feature files  
-├── 📂 StepDefinitions   # Step definitions (Reqnroll/NUnit)  
-├── 📂 SetUp             # Context & setup classes (API client, auth handling)  
-├── 📂 Model             # DTOs for requests & responses  
-├── 📂 Reports           # Generated HTML reports (ExtentReports)  
-├── 📂 Screenshots       # Screenshots/logs for failed tests  
-└── 📜 README.md         # Documentation  
-
+Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieved(GET)
+	Given that RestfulBooker web services with resource auth is loaded for POST call
+	When I create a new booking with the following details
+		| firstname | lastname | totalprice | depositpaid | checkin    | checkout   | additionalneeds |
+		| Usman     | Oye      | 523        | false       | 2017-08-09 | 2022-06-26 | Breakfast       |
+	Then the status code must be equal to OK
+	And a new booking ID is generated
+	When I retrieve the booking I just created
+	Then the status code must be equal to OK
+	And the following records must be retrieved from Booking table
+		| firstname | lastname | totalprice | depositpaid | checkin    | checkout   | additionalneeds |
+		| Usman     | Oye      | 523        | false       | 2017-08-09 | 2022-06-26 | Breakfast       |
+		
 ---
 ## 📊 Sample Test Execution Report
 
