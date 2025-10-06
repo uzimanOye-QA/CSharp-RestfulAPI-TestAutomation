@@ -73,25 +73,23 @@ Below are sample screenshots from the **ExtentReports HTML Report** generated af
 ### 🧩 Dashboard Overview
 Displays overall feature, scenario, and step-level execution summary.
 
-![Extent Report Dashboard](./assets/extent-dashboard.png)
+<img width="1861" height="896" alt="image" src="https://github.com/user-attachments/assets/88d5428a-b3ef-48e4-a561-f84ac3aac489" />
 
 ---
 
 ### ✅ Detailed Scenario Report
 Shows individual API test scenarios (POST, GET, PUT, PATCH, DELETE) and their pass/fail status.
 
-![Extent Report Scenario View](./assets/extent-scenarios.png)
+<img width="1855" height="942" alt="image" src="https://github.com/user-attachments/assets/13a85cc6-7c73-42ea-aabd-57dc2f0ee6aa" />
 
 ---
 
 ### 🧾 API Request & Response Logs
 Each test saves its request and response details automatically for traceability.
 
-![API Logs Example](./assets/api-logs.png)
+<img width="1431" height="547" alt="image" src="https://github.com/user-attachments/assets/24691b19-b8e1-456e-932c-58c97aaf2fa9" />
 
 ---
-
-
 
 
 ## 🚀 Getting Started  
