@@ -7,7 +7,6 @@
 ![ExtentReports](https://img.shields.io/badge/ExtentReports-Reporting-red)
 
 
-https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/API%20result_logs%20file.png
 ---
 
 ## 🚀 Overview
@@ -74,20 +73,19 @@ Below are sample screenshots from the **ExtentReports HTML Report** generated af
 
 ### 🧩 Dashboard Overview
 Displays overall feature, scenario, and step-level execution summary.
-
-https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/APi%20Result_Dashboard%20Overview.png
+![image alt](https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/APi%20Result_Dashboard%20Overview.png)
 ---
 
 ### ✅ Detailed Scenario Report
 Shows individual API test scenarios (POST, GET, PUT, PATCH, DELETE) and their pass/fail status.
 
-https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/Detailed%20APi%20Scenario%20Report.png
+![image alt](https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/Detailed%20APi%20Scenario%20Report.png)
 ---
 
 ### 🧾 API Request & Response Logs
 Each test saves its request and response details automatically for traceability.
 
-https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/API%20result_logs%20file.png
+![image alt](https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/API%20result_logs%20file.png)
 ---
 
 
