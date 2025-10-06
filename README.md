@@ -11,8 +11,26 @@
 
 ## 🚀 Overview
 A **fully automated API testing framework** for the ***[Restful Booker API](https://restful-booker.herokuapp.com/)**, demonstrating **end-to-end CRUD testing, authentication handling, data-driven scenarios, and rich reporting**. Designed to showcase **professional, maintainable, reliable and scalable automation skills**.
-![image alt](https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/APi%20Result_Dashboard%20Overview.png)
+---
+## 📊 Sample Test Execution Report
 
+Below are sample screenshots from the **ExtentReports HTML Report** generated after running the automated API tests.
+
+### 🧩 Dashboard Overview
+Displays overall feature, scenario, and step-level execution summary.
+![image alt](https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/APi%20Result_Dashboard%20Overview.png)
+---
+
+### ✅ Detailed Scenario Report
+Shows individual API test scenarios (POST, GET, PUT, PATCH, DELETE) and their pass/fail status.
+
+![image alt](https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/Detailed%20APi%20Scenario%20Report.png)
+---
+
+### 🧾 API Request & Response Logs
+Each test saves its request and response details automatically for traceability.
+
+![image alt](https://github.com/uzimanOye-QA/CSharp-RestfulAPI-TestAutomation/blob/3b37e003debaab056905fe71c6a30793d422f4a0/API%20result_logs%20file.png)
 ---
 
 ## 💡 Key Features
