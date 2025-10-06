@@ -73,7 +73,7 @@ Below are sample screenshots from the **ExtentReports HTML Report** generated af
 ### 🧩 Dashboard Overview
 Displays overall feature, scenario, and step-level execution summary.
 
-<img width="1861" height="896" alt="image" src="https://github.com/user-attachments/assets/88d5428a-b3ef-48e4-a561-f84ac3aac489" />
+<img width="1860" height="967" alt="image" src="https://github.com/user-attachments/assets/0e20eecb-8f0c-4291-9e35-302a4a86d753" />
 
 ---
 
