@@ -65,6 +65,8 @@ Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieve
 
 
 ---
+## 🛠 Technologies Used
+
 ## The framework provides
 
 ✅ Easy-to-read **Gherkin feature files**  
@@ -74,6 +76,8 @@ Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieve
 ✅ **Screenshot-on-failure support** (UI/logs)
 
 ---
+## 🛠 Technologies Used
+
 ## ✅ Future Enhancements
 
 🔹 JSON Schema Validation
