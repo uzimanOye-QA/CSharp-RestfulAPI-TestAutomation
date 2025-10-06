@@ -9,7 +9,7 @@
 ---
 
 ## 🚀 Overview
-A **fully automated API testing framework** for the ***[Restful Booker API](https://restful-booker.herokuapp.com/)**, demonstrating **end-to-end CRUD testing, authentication handling, data-driven scenarios, and rich reporting**. Designed to showcase **professional, maintainable, and scalable automation skills**.
+A **fully automated API testing framework** for the ***[Restful Booker API](https://restful-booker.herokuapp.com/)**, demonstrating **end-to-end CRUD testing, authentication handling, data-driven scenarios, and rich reporting**. Designed to showcase **professional, maintainable, reliable and scalable automation skills**.
 
 ---
 
@@ -33,7 +33,8 @@ A **fully automated API testing framework** for the ***[Restful Booker API](http
 - **Newtonsoft.Json** – JSON serialization/deserialization  
 - **NUnit** – Test execution and assertions  
 - **Reqnroll & SpecFlow** – Gherkin-based BDD automation  
-- **ExtentReports** – Professional HTML reporting   
+- **ExtentReports** – Professional HTML reporting
+- - **Visual Studio 2022** - IDEs used   
 ---
 ## 📂 Project Structure  
 
@@ -62,27 +63,56 @@ Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieve
 	And the following records must be retrieved from Booking table
 		| firstname | lastname | totalprice | depositpaid | checkin    | checkout   | additionalneeds |
 		| Usman     | Oye      | 523        | false       | 2017-08-09 | 2022-06-26 | Breakfast       |
+---
 
+
+## 📊 Sample Test Execution Report
+
+Below are sample screenshots from the **ExtentReports HTML Report** generated after running the automated API tests.
+
+### 🧩 Dashboard Overview
+Displays overall feature, scenario, and step-level execution summary.
+
+![Extent Report Dashboard](./assets/extent-dashboard.png)
 
 ---
-## 🛠 Technologies Used
 
-## The framework provides
+### ✅ Detailed Scenario Report
+Shows individual API test scenarios (POST, GET, PUT, PATCH, DELETE) and their pass/fail status.
 
-✅ Easy-to-read **Gherkin feature files**  
-✅ **Reusable Context** for API calls (using RestSharp)  
-✅ **HTML Reports with ExtentReports**  
-✅ **Request/Response logging** (saved as text/images)  
-✅ **Screenshot-on-failure support** (UI/logs)
+![Extent Report Scenario View](./assets/extent-scenarios.png)
 
 ---
-## 🛠 Technologies Used
 
-## ✅ Future Enhancements
+### 🧾 API Request & Response Logs
+Each test saves its request and response details automatically for traceability.
 
-🔹 JSON Schema Validation
-🔹 CI/CD Integration (GitHub Actions, Azure DevOps, Jenkins)
-🔹 Parallel Execution support
-🔹 Environment-based config (QA, Staging, Prod)
+![API Logs Example](./assets/api-logs.png)
+
+---
+
+
+
+
+## 🚀 Getting Started  
+### 1️⃣ Clone the repo  
+```bash
+git clone https://github.com/your-username/CSharp-RestfulAPI-TestAutomation.git
+cd RestfulAPITestAutomationFramework
+---
+2️⃣ Install Dependencies
+
+Make sure you have installed:
+.NET 6 SDK or higher
+NUnit Test Adapter (for Visual Studio / Rider)
+NuGet packages: RestSharp, Newtonsoft.Json, Reqnroll, ExtentReports
+
+Restore dependencies:
+dotnet restore
+---
+3️⃣ Run the tests
+
+dotnet test
+--- 
 
 
