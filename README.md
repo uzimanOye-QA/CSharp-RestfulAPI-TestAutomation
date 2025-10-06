@@ -65,7 +65,7 @@ Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieve
 
 
 ------
-## **The framework provides: **
+## The framework provides:
 
 ✅ Easy-to-read **Gherkin feature files**  
 ✅ **Reusable Context** for API calls (using RestSharp)  
@@ -74,7 +74,7 @@ Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieve
 ✅ **Screenshot-on-failure support** (UI/logs)
 
 ---
-## ✅ **Future Enhancements**
+## ✅ Future Enhancements**
 
 🔹 JSON Schema Validation
 🔹 CI/CD Integration (GitHub Actions, Azure DevOps, Jenkins)
