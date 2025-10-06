@@ -34,7 +34,6 @@ A **fully automated API testing framework** for the ***[Restful Booker API](http
 - **Reqnroll & SpecFlow** – Gherkin-based BDD automation  
 - **ExtentReports** – Professional HTML reporting
 - - **Visual Studio 2022** - IDEs used
-
 ---
 ## 🎯 Example Test Scenarios
 Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieved(GET)
