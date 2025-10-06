@@ -80,8 +80,7 @@ Displays overall feature, scenario, and step-level execution summary.
 ### ✅ Detailed Scenario Report
 Shows individual API test scenarios (POST, GET, PUT, PATCH, DELETE) and their pass/fail status.
 
-<img width="1855" height="942" alt="image" src="https://github.com/user-attachments/assets/13a85cc6-7c73-42ea-aabd-57dc2f0ee6aa" />
-
+<img width="1855" height="942" alt="Image" src="https://github.com/user-attachments/assets/75c8f0e7-1461-434d-810c-97e8e5c0d401" />
 ---
 
 ### 🧾 API Request & Response Logs
