@@ -37,7 +37,6 @@ A **fully automated API testing framework** for the ***[Restful Booker API](http
 
 ---
 ## 🎯 Example Test Scenarios
-
 Scenario: Booking_01_Verify that a new booking can be created(POST) and retrieved(GET)
 	Given that RestfulBooker web services with resource auth is loaded for POST call
 	When I create a new booking with the following details
