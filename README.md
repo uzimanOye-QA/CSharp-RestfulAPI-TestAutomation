@@ -86,14 +86,11 @@ Each test saves its request and response details automatically for traceability.
 ├── 📂 StepDefinitions   # Step definitions (Reqnroll/NUnit)  
 ├── 📂 SetUp             # Context & setup classes (API client, auth handling)  
 ├── 📂 Model             # DTOs for requests & responses  
-├── 📂 Reports           # Generated HTML reports (ExtentReports)  
-├── 📂 Screenshots       # Screenshots/logs for failed tests  
 └── 📜 README.md         # Documentation  
-
 ---
+## 🚀 Getting Started
 
-## 🚀 Getting Started  
-### 1️⃣ Clone the repo  
+### 1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/your-username/CSharp-RestfulAPI-TestAutomation.git
 cd RestfulAPITestAutomationFramework
